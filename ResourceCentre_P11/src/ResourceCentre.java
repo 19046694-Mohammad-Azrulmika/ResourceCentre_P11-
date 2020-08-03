@@ -137,11 +137,12 @@ public class ResourceCentre {
 		for (int i = 0; i < camcorderList.size(); i++) {
 			
 			//Extract Variables
-			String assetTag = camcorderList.get(i).getAssetTag();
-			String description = camcorderList.get(i).getDescription();
-			boolean isAvailable = camcorderList.get(i).getIsAvailable();
-			String dueDate = camcorderList.get(i).getDueDate();
-			int opticalZoom = camcorderList.get(i).getOpticalZoom();
+//			String assetTag = camcorderList.get(i).getAssetTag();
+//			String description = camcorderList.get(i).getDescription();
+//			boolean isAvailable = camcorderList.get(i).getIsAvailable();
+//			String dueDate = camcorderList.get(i).getDueDate();
+//			int opticalZoom = camcorderList.get(i).getOpticalZoom();
+			//Commented out as the values here are already replaced and called in the items/camcorder/chromebook classes accordingly
 			
 			output += String.format("%-90s\n",camcorderList.get(i).toString());
 		}
@@ -161,11 +162,12 @@ public class ResourceCentre {
 		for (int i = 0; i < chromebookList.size(); i++) {
 
 			//Extract Variables
-			String assetTag = chromebookList.get(i).getAssetTag();
-			String description = chromebookList.get(i).getDescription();
-			boolean isAvailable = chromebookList.get(i).getIsAvailable();
-			String dueDate = chromebookList.get(i).getDueDate();
-			String os = chromebookList.get(i).getOs();
+//			String assetTag = chromebookList.get(i).getAssetTag();
+//			String description = chromebookList.get(i).getDescription();
+//			boolean isAvailable = chromebookList.get(i).getIsAvailable();
+//			String dueDate = chromebookList.get(i).getDueDate();
+//			String os = chromebookList.get(i).getOs();
+			//Commented out as the values here are already replaced and called in the items/camcorder/chromebook classes accordingly
 			
 			output += String.format("%-90s\n",chromebookList.get(i).toString());
 		}
