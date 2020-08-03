@@ -17,6 +17,8 @@ public class ResourceCentre {
 		camcorderList.add(new Camcorder("CC002", "Panasonic HC-MDH2", 10));
 		chromebookList.add(new Chromebook("CB001", "ASUS Chromebook ", "Win 10"));
 		chromebookList.add(new Chromebook("CB002", "HP Chromebook", "Win 10"));
+		
+		
 
 		int option = 0;
 
@@ -141,10 +143,7 @@ public class ResourceCentre {
 			String dueDate = camcorderList.get(i).getDueDate();
 			int opticalZoom = camcorderList.get(i).getOpticalZoom();
 			
-			output += String.format("%-10s %-30s %-10s %-10s %-20d\n", assetTag,
-					description, 
-					ResourceCentre.showAvailability(isAvailable),
-					dueDate,opticalZoom);
+			output += String.format("%-90s\n",camcorderList.get(i).toString());
 		}
 		return output;
 	}
@@ -168,10 +167,7 @@ public class ResourceCentre {
 			String dueDate = chromebookList.get(i).getDueDate();
 			String os = chromebookList.get(i).getOs();
 			
-			output += String.format("%-10s %-30s %-10s %-10s %-20s\n", assetTag,
-					description, 
-					ResourceCentre.showAvailability(isAvailable),
-					dueDate,os);
+			output += String.format("%-90s\n",chromebookList.get(i).toString());
 		}
 		return output;
 	}

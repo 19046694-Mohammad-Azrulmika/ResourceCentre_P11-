@@ -11,10 +11,13 @@ public class Item {
 		this.dueDate = "";
 		this.isAvailable = true;
 	}
+	
+	//To promote Code Re-Use
 	public String toString() {
+
+		String StringFormat = String.format("%-10s %-30s %-10s %-10s",this.assetTag,this.description,this.showAvailability(isAvailable),dueDate);
 		
-		// Write your codes here
-		return null;
+		return StringFormat;
 	}
 	public String getAssetTag() {
 		return assetTag;
@@ -38,6 +41,20 @@ public class Item {
 
 	public void setIsAvailable(boolean isAvailable) {
 		this.isAvailable = isAvailable;
+	}
+	
+	//To promote Code Re-Use
+	public static String showAvailability(boolean isAvailable) {
+		String avail;
+		
+		if(isAvailable == true) {
+			avail = "Yes";
+		}
+		else {
+			avail = "No";
+		}
+		
+		return avail;
 	}
 }
 
